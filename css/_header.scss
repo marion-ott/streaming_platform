@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 1.5em;
+  &__titleContainer {
+    display: flex;
+    align-items: center;
+  }
+  &__title {
+    color: $yellow;
+    font-weight: 600;
+    font-size: 30px;
+    text-decoration: none;
+  }
+  &__imgContainer {
+    width: 15%;
+  }
+  &__img {
+    width: 75%;
+  }
+  &__searchBarContainer {
+    display: flex;
+    align-items: center;
+  }
+  &__nav {
+    list-style: none;
+    margin-right: 2em;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: $white;
+    transition: ease 0.15s color;
+    &:hover {
+      color: $yellow;
+    }
+  }
+  &__navDecoration {
+    display: inline-block;
+    letter-spacing: -2px;
+    margin-right: 1em;
+  }
+  &__searchBar {
+    border: solid 1px white;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-family: 'OpenSans';
+    font-size: 12px;
+    &:focus {
+      outline: none;
+    }
+  }
+}

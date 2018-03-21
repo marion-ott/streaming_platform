@@ -1,0 +1,41 @@
+.allMovies {
+  align-items: center;
+  &__title {
+    color: $yellow;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: 'OpenSans';
+    font-size: 25px;
+    margin-right: 2em;
+  }
+  &__moviesContainer {
+    width: 100%;
+    margin-top: 3em;
+    display: flex;
+    //position: absolute;
+    flex-wrap: wrap;
+    margin-bottom: 15em;
+  }
+  &__moviesItems {
+    width: 18%;
+    margin-bottom: 1.7em;
+    &:not(last-child) {
+      margin-right: 1.75em;
+    }
+  }
+  &__moviesImg {
+    width: 100%;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  &__moviesPlay {
+    z-index: -1;
+    opacity: 1;
+    font-size: 80px;
+    position: relative;
+    margin-bottom: -1em;
+    left: 80;
+    bottom: -125;
+  }
+}
